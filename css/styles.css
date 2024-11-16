@@ -1,0 +1,654 @@
+:root {
+    --blue: #4c8dce;
+    --white: #8b8d8f;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+
+}
+
+header {
+    background-color: var(--blue);
+    color: white;
+    position: sticky;
+    top: 0;
+    height: 50px;
+}
+
+.haeder-button {
+    border: 2px solid rgb(76, 168, 230);
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+.haeder-button:hover {
+    background-color: rgb(137, 211, 253);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    background-color: #f1f1f1;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 80%;
+    margin: auto;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list a:hover {
+    font-weight: 500;
+    border-bottom: 2px solid white;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown:hover .mega-menu {
+    display: block;
+}
+
+.mega-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: black;
+    z-index: 1000;
+    padding: 20px;
+    width: 500px;
+}
+
+.mega-menu-column {
+    margin: 10px;
+}
+
+.container {
+    padding: 20px;
+}
+
+.slide {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.button-read-more {
+    border: 2px solid rgb(112, 112, 112);
+    border-radius: 15px;
+    padding: 10px 25px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.button-read-more:hover {
+    box-shadow: 1px 1px 5px gray;
+}
+
+.target-box {
+    height: 250px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(120, 9, 121, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    width: 25.33%;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.three-target-boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reports {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    flex-direction: column;
+}
+
+.box {
+    background-color: #f3f3f3;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+}
+
+.managers-details {
+    margin-top: 50px;
+    background-color: #f1f1f1;
+}
+
+.content-managers-detail {
+    padding: 15px;
+}
+
+footer {
+    background-color: var(--blue);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    margin-top: 20px;
+}
+
+.socials a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Mobile Styling */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 2px 0;
+
+}
+
+.arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 2px;
+    margin-right: -5px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+.manager-title-parent {
+    width: 100%;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    padding-bottom: 5px;
+    margin-top: 50px;
+}
+
+.manager-title {
+    width: 80%;
+}
+
+.manager-box-pic-title {
+    height: 150px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.manager-box-pic-title-box {
+    height: 300px;
+    width: 210px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    object-fit: cover;
+    background-color: rgb(226, 226, 226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.manager-box-pic-title-box>img {
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.manager-box-pic-title-box>span {
+    color: rgb(42, 133, 218);
+    font-size: larger;
+    margin-top: 10px;
+}
+
+.manager-box-pic-title-box>p {
+    color: black
+}
+
+.content-boxes-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.financial-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    color: white;
+}
+
+.financial-box-pic {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    border: 2px solid blue;
+    background: url(../images/samanSarafi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    object-fit: fill;
+    justify-content: center;
+    background-position: center;
+}
+
+
+
+.content-boxes-box>div {
+    width: 32%;
+    height: 300px;
+    background-color: rgb(99, 232, 250);
+    border-radius: 20px;
+
+}
+
+.financial-group {
+    height: 400px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(30, 30, 116, 0.8687850140056023) 0%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.financial-group-contain-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* achievement section---------------------------------------------------------------------------------------------------------------------- */
+
+.achievement {
+    margin-top: 100px;
+    background-color: white;
+    padding: 10px;
+}
+
+.achievement-main-box {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+
+.achievement-right-side {
+    width: 48%;
+    height: 700px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.achievement-left-side {
+    width: 48%;
+    display: flex;
+    height: 700px;
+    flex-direction: column;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+.achievement-right-side-top {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievement-right-side-bottom {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.achievement-right-side-bottom>div {
+    border: 2px solid rgb(177, 177, 177);
+    height: 90%;
+    width: 48%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievement-left-side-top {
+    display: flex;
+    height: 50%;
+    justify-content: space-around;
+}
+
+.achievement-left-side-top>div {
+    width: 40%;
+    height: 80%;
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievement-left-side-bottom {
+    height: auto;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.achievement-left-side-bottom>div {
+    border: 2px solid rgb(187, 187, 187);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 93%;
+}
+
+.button-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-achievement-righ-side {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.button-achievement-righ-side:hover {
+    box-shadow: 1px 1px 5px gray;
+}
+
+.text-display {
+    margin-top: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* media queries for responsive----------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 1629px) {
+
+    .manager-box-pic-title {
+        height: 500px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+
+    }
+
+    .manager-box-pic-title-box {
+        height: auto;
+        width: 25%;
+        box-sizing: border-box;
+        border-radius: 20px;
+        object-fit: cover;
+        background-color: rgb(219, 219, 219);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .target-box {
+        width: 48%;
+        margin-top: 10px;
+    }
+
+
+
+    .three-target-boxes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .manager-box-pic-title {
+        height: auto;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+
+    }
+
+    .manager-box-pic-title-box {
+        height: auto;
+        width: 33%;
+        box-sizing: border-box;
+        border-radius: 20px;
+        object-fit: cover;
+        background-color: rgb(219, 219, 219);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+
+    }
+
+    .content-boxes-box {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+    }
+
+    .content-boxes-box>div {
+        width: 90%;
+        height: 500px;
+        background-color: rgb(99, 232, 250);
+        border-radius: 20px;
+        border: 2px solid red;
+    }
+
+    .financial-group-contain-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: auto;
+
+    }
+
+    .financial-box {
+        width: 45%;
+    }
+
+    .financial-group {
+        height: auto;
+    }
+
+    .achievement-right-side {
+        width: 100%;
+    }
+
+    .achievement-left-side {
+        margin-top: 40px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 914px) {
+
+    .target-box {
+        width: 80%;
+    }
+
+    .target-box:nth-child(2n) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .three-target-boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-list li {
+        font-weight: 500;
+        border-bottom: none;
+        margin-top: 10px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu-toggle.active {
+        position: absolute;
+        right: 0;
+        margin-right: 10px;
+        margin-top: -120px;
+    }
+
+    .target-box {
+        width: 80%;
+    }
+
+    .target-box:nth-child(2n) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .three-target-boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .manager-box-pic-title {
+        height: auto;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+
+    }
+
+    .manager-box-pic-title-box {
+        height: 300px;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 20px;
+        object-fit: cover;
+        background-color: rgb(219, 219, 219);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 10px;
+
+    }
+
+    .financial-group-contain-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: auto;
+
+    }
+
+    .financial-box {
+        width: 100%;
+    }
+
+    .financial-group {
+        height: auto;
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}
